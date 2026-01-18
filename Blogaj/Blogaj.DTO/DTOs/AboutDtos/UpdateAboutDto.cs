@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blogaj.DTO.DTOs
+namespace Blogaj.DTO.DTOs.AboutDtos
 {
-    public class CreateAboutDto
-    {   
-        //public int AboutId { get; set; }
+    public class UpdateAboutDto
+    {
+        public int AboutId { get; set; }
         public string Description { get; set; } = default!;
         public string ImageUrl { get; set; } = default!;
         public string ImageUrl1 { get; set; } = default!;

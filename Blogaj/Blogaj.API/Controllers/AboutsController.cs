@@ -2,8 +2,8 @@
 using Azure;
 using Microsoft.AspNetCore.Mvc;
 using Blogaj.Business.Abstract;
-using Blogaj.DTO.DTOs;
 using Blogaj.Entity.Entities;
+using Blogaj.DTO.DTOs.AboutDtos;
 
 namespace Blogaj.API.Controllers
 {

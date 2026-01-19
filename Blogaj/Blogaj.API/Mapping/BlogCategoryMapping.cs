@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
-using Blogaj.WebUI.DTOs.BlogCategoryDtos;
-using Blogaj.WebUI.DTOs.CategoryDtos;
 using Blogaj.Entity.Entities;
+using Blogaj.WebUI.DTOs.BlogCategoryDtos;
 
 namespace Blogaj.API.Mapping
 {

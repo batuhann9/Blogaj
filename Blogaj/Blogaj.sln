@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blogaj.API", "Blogaj.API\Blogaj.API.csproj", "{62FD800B-8C54-5E6D-F5EB-A856EA5B1035}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blogaj.DTO", "Blogaj.DTO\Blogaj.DTO.csproj", "{FB3E48E4-6AA0-2718-2DD3-99D735B6893A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blogaj.Entity", "Blogaj.Entity\Blogaj.Entity.csproj", "{304C2514-8EC1-A92B-FE24-9E64AC071C39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blogaj.WebUI", "Blogaj.WebUI\Blogaj.WebUI.csproj", "{1AEE9769-4355-4032-BB48-CCE135D7512F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{304C2514-8EC1-A92B-FE24-9E64AC071C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{304C2514-8EC1-A92B-FE24-9E64AC071C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{304C2514-8EC1-A92B-FE24-9E64AC071C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEE9769-4355-4032-BB48-CCE135D7512F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEE9769-4355-4032-BB48-CCE135D7512F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEE9769-4355-4032-BB48-CCE135D7512F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEE9769-4355-4032-BB48-CCE135D7512F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

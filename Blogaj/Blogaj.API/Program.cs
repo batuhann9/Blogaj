@@ -1,50 +1,30 @@
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Blogaj.Business.Abstract;
 using Blogaj.Business.Concrete;
 using Blogaj.DataAccess.Abstract;
 using Blogaj.DataAccess.Context;
 using Blogaj.DataAccess.Repositories;
-using System.Reflection;
-using Blogaj.API.Mapping;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//                                  Mapping
-
-// AutoMapper'da AddAutoMapper birden fazla overload'a sahiptir.
-// Biz sadece Assembly gönderince, C# yanlýþ overload'u seçmeye çalýþýyordu
-// ve "Action<IMapperConfigurationExpression>" beklediði için hata alýyorduk.
-//
-// cfg => { }  : Boþ bir configuration action vererek
-// doðru overload'un seçilmesini saðlýyoruz.
-// typeof(AboutMapping).Assembly : Profile class'larýnýn bulunduðu assembly.
-// builder.Services.AddAutoMapper(typeof(AboutMapping).Assembly);
-// Bu yüzden bu yazým çalýþýr, diðeri çalýþmaz.
-
+// AutoMapper
 builder.Services.AddAutoMapper(cfg => { }, AppDomain.CurrentDomain.GetAssemblies());
 
-
-// Add services to the container.
+// DI
 builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
 
+// Controllers
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<BlogajContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("SqlConnection")
-    )
-);
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection")));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -53,8 +33,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseRouting();
 app.UseAuthorization();
 
+// Eðer "areas" route’una gerçekten ihtiyacýn varsa:
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+);
+
+// API endpointleri (attribute routing)
 app.MapControllers();
 
 app.Run();

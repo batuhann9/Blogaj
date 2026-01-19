@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Blogaj.Business.Abstract;
-using Blogaj.DTO.DTOs.CategoryDtos;
+using Blogaj.WebUI.DTOs.CategoryDtos;
 using Blogaj.Entity.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,7 +27,7 @@ namespace Blogaj.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(BlogCreateCategoryDto dto)
+        public IActionResult Create(CreateBlogCategoryDto dto)
         {
             var entity = _mapper.Map<BlogCategory>(dto);
             _blogCategoryService.TCreate(entity);
@@ -35,7 +35,7 @@ namespace Blogaj.API.Controllers
         }
 
         [HttpPut]
-        public IActionResult Update(BlogUpdateCategoryDto dto)
+        public IActionResult Update(UpdateBlogCategoryDto dto)
         {
             var entity = _mapper.Map<BlogCategory>(dto);
             _blogCategoryService.TUpdate(entity);

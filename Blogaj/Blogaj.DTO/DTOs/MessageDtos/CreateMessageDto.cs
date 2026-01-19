@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blogaj.DTO.DTOs.MessageDtos
+namespace Blogaj.WebUI.DTOs.MessageDtos
 {
     public class CreateMessageDto
     {

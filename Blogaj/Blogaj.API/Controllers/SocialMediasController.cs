@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Blogaj.Business.Abstract;
-using Blogaj.DTO.DTOs.SocialMediaDtos;
+using Blogaj.WebUI.DTOs.SocialMediaDtos;
 using Blogaj.Entity.Entities;
 using Microsoft.AspNetCore.Mvc;
 

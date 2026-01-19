@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blogaj.DTO.DTOs.CourseDtos
+namespace Blogaj.WebUI.DTOs.CourseDtos
 {
     public class UpdateCourseDto
     {

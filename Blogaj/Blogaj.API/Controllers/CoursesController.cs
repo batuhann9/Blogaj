@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Blogaj.Business.Abstract;
-using Blogaj.DTO.DTOs.CourseDtos;
+using Blogaj.WebUI.DTOs.CourseDtos;
 using Blogaj.Entity.Entities;
 using Microsoft.AspNetCore.Mvc;
 

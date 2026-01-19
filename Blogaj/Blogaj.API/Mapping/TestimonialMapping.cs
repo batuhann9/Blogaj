@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Blogaj.DTO.DTOs.TestimonialDtos;
+using Blogaj.WebUI.DTOs.TestimonialDtos;
 using Blogaj.Entity.Entities;
 
 namespace Blogaj.API.Mapping

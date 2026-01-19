@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Blogaj.DTO.DTOs.BlogCategoryDtos;
-using Blogaj.DTO.DTOs.CategoryDtos;
+using Blogaj.WebUI.DTOs.BlogCategoryDtos;
+using Blogaj.WebUI.DTOs.CategoryDtos;
 using Blogaj.Entity.Entities;
 
 namespace Blogaj.API.Mapping
@@ -9,8 +9,8 @@ namespace Blogaj.API.Mapping
     {
         public BlogCategoryMapping()
         {
-            CreateMap<BlogCreateCategoryDto, BlogCategory>().ReverseMap();
-            CreateMap<BlogUpdateCategoryDto, BlogCategory>().ReverseMap();
+            CreateMap<CreateBlogCategoryDto, BlogCategory>().ReverseMap();
+            CreateMap<UpdateBlogCategoryDto, BlogCategory>().ReverseMap();
             CreateMap<ResultBlogCategoryDto, BlogCategory>().ReverseMap();
         }
     }

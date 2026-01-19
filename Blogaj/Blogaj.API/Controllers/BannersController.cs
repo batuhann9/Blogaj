@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Blogaj.Business.Abstract;
-using Blogaj.DTO.DTOs.AboutDtos;
-using Blogaj.DTO.DTOs.BannerDtos;
+using Blogaj.WebUI.DTOs.AboutDtos;
+using Blogaj.WebUI.DTOs.BannerDtos;
 using Blogaj.Entity.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

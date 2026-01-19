@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Blogaj.DTO.DTOs.ContactDtos;
+using Blogaj.WebUI.DTOs.ContactDtos;
 using Blogaj.Entity.Entities;
 
 public class ContactMapping : Profile

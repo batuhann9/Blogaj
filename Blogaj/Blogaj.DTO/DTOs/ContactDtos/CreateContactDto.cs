@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blogaj.DTO.DTOs.ContactDtos
+namespace Blogaj.WebUI.DTOs.ContactDtos
 {
     public class CreateContactDto
     {

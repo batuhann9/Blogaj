@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blogaj.DTO.DTOs.BlogDtos
+namespace Blogaj.WebUI.DTOs.BlogDtos
 {
     public class ResultBlogDto
     {

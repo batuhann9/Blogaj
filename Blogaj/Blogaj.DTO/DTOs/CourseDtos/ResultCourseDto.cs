@@ -1,4 +1,4 @@
-﻿using Blogaj.DTO.DTOs.CourseCategoryDto;
+﻿using Blogaj.WebUI.DTOs.CourseCategoryDto;
 using Blogaj.Entity.Entities;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blogaj.DTO.DTOs.CourseDtos
+namespace Blogaj.WebUI.DTOs.CourseDtos
 {
     public class ResultCourseDto
     {
